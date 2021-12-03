@@ -32,18 +32,18 @@ function renderBook(book) {
     })
 
 
-    //Delete Button//
-    let deleteBttn = document.createElement('button')
-    deleteBttn.textContent = 'Delete'
+//     //Delete Button//
+//     let deleteBttn = document.createElement('button')
+//     deleteBttn.textContent = 'Delete'
 
-    deleteBttn.addEventListener('click', function () {
-        fetch('http://localhost:3001/removeBook/{bookId}'), {
-            method: 'DELETE',
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        }
-    })
+//     deleteBttn.addEventListener('click', function () {
+//         fetch('http://localhost:3001/removeBook/{bookId}'), {
+//             method: 'DELETE',
+//             headers: {
+//                 'Content-Type': 'application/json'
+//             }
+//         }
+//     })
     
     root.append(li)
     root.append(saveBttn)
